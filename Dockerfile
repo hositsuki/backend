@@ -5,7 +5,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-COPY backend .
+COPY . .
 
 # 编译 TypeScript
 RUN npm run build
